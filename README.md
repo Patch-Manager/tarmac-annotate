@@ -26,26 +26,26 @@ example of a tarmac file:
 
 The following shows an example of the tarmac file with annotations:
 
-  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-  LOG_ILogWaypointValue entry (2000afc0) 
-  C:\\prod\\tags\\Project_06.07.09.02\\Source\\Log\\Log_Handlers.c
-  void LOG_ILogWaypointValue( uint32 logVal )
-      Project_AppMain -> Project_AppExecute -> Project_ILogWriteDebugString -> Project_ILogWriteDebugvalue -> LOG_ILogWaypointValue
-
-  454166925 ns IT 2000afc0 b510        PUSH     {r4,lr}
-  454167025 ns MR4_I 2000afc4 49076008
-  454167125 ns MW4_D 2001fe48 40240000
-  454167225 ns MW4_D 2001fe4c 2000a241
-  454167225 ns R r13 2001fe48 (MSP)
-  ...
-  454167825 ns MW4_D 40240a5c 33000609                        ; REGISTER_Waypoint <= 33000609
-  454167825 ns IT 2000afc6 4907        LDR      r1,[pc,#28]  ; [0x2000afe4]
-  454168025 ns MR4_D 2000afe4 2001ec00
-  454168025 ns R r1 2001ec00
-  454168025 ns IT 2000afc8 680a        LDR      r2,[r1,#0]
-  454168125 ns MR4_I 2000afcc 50e04c06
-  454168225 ns MR4_D 2001ec00 00000072                        ; ADDRESS_Glb_LogCounter => 00000072
-  454168225 ns R r2 00000072
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    LOG_ILogWaypointValue entry (2000afc0) 
+    C:\\prod\\tags\\Project_06.07.09.02\\Source\\Log\\Log_Handlers.c
+    void LOG_ILogWaypointValue( uint32 logVal )
+        Project_AppMain -> Project_AppExecute -> Project_ILogWriteDebugString -> Project_ILogWriteDebugvalue -> LOG_ILogWaypointValue
+    
+    454166925 ns IT 2000afc0 b510        PUSH     {r4,lr}
+    454167025 ns MR4_I 2000afc4 49076008
+    454167125 ns MW4_D 2001fe48 40240000
+    454167225 ns MW4_D 2001fe4c 2000a241
+    454167225 ns R r13 2001fe48 (MSP)
+    ...
+    454167825 ns MW4_D 40240a5c 33000609                        ; REGISTER_Waypoint <= 33000609
+    454167825 ns IT 2000afc6 4907        LDR      r1,[pc,#28]  ; [0x2000afe4]
+    454168025 ns MR4_D 2000afe4 2001ec00
+    454168025 ns R r1 2001ec00
+    454168025 ns IT 2000afc8 680a        LDR      r2,[r1,#0]
+    454168125 ns MR4_I 2000afcc 50e04c06
+    454168225 ns MR4_D 2001ec00 00000072                        ; ADDRESS_Glb_LogCounter => 00000072
+    454168225 ns R r2 00000072
 
 Set the variableDictionary and default path strings prior to executing this Python
 application.  See the argumentParser for a list of available parameters. 
